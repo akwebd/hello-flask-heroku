@@ -8,7 +8,8 @@ def index():
 
 @app.route('/mail')
 def mail():
-    return notify
+    notify
+    return 'sent'
 
 
 if __name__ == '__main__':
