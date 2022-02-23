@@ -1,13 +1,10 @@
 from flask import Flask
 app = Flask(__name__)
-'''
+
 @app.route('/')
 def hello_world():
-    return 'Hello World!2'
-'''
-@app.route('/')
-def hello_world2():
-    return 'Hello World!2'
+    return ['Hello World!1', 'Hello World!2']
+
 
 if __name__ == '__main__':
     app.run()
