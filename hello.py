@@ -11,8 +11,10 @@ def mail():
     notify
     return 'sent'
 '''
-notify
 
+while(True):
+    notify
+    sleep(60)
     
 
 
