@@ -11,10 +11,12 @@ def mail():
     notify
     return 'sent'
 '''
-
+timer = 0
 while(True):
+    timer = 0
     notify
-    sleep(1)
+    while(timer < 5000):
+        timer=+1
     
 
 
