@@ -14,7 +14,7 @@ def mail():
 
 while(True):
     notify
-    sleep(120)
+    sleep(300)
     
 
 
