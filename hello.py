@@ -14,9 +14,9 @@ def mail():
 timer = 0
 while(True):
     timer = 0
-    notify("")
-    while(timer < 5000000):
-        timer=+1
+    notify.notify("")
+    while(timer < 5000):
+        timer+=1
     
 
 
