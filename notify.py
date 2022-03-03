@@ -15,7 +15,7 @@ receiver_address = EMAIL_ADR
 message = MIMEMultipart()
 message['From'] = sender_address
 message['To'] = receiver_address
-message['Subject'] = 'A test mail sent by Python. It has an attachment.'   #The subject line
+message['Subject'] = 'AAAA test mail sent by Python. It has an attachment.'   #The subject line
 #The body and the attachments for the mail
 message.attach(MIMEText(mail_content, 'plain'))
 #Create SMTP session for sending the mail
