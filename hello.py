@@ -12,7 +12,7 @@ def mail():
     return 'sent'
 '''
 while(True):
-    notify("")
+    #notify("")
     time.sleep(60)
     
 
