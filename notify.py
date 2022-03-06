@@ -2,7 +2,7 @@ import smtplib
 from secrets import EMAIL_ADR, EMAIL_PASS
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from time import ctime
+from time import ctime, sleep
 def notify(message):
     mail_content = """Hello,
     This is a simple mail. There is only text, no attachments are there The mail is sent using Python SMTP library.
@@ -27,5 +27,6 @@ def notify(message):
     session.login(sender_address, sender_pass) #login with mail_id and password
     text = message.as_string()
     session.sendmail(sender_address, receiver_address, text)
+    sleep(5)
     session.quit()
     #print('Mail Sent')

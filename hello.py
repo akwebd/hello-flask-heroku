@@ -1,6 +1,6 @@
 from flask import Flask
 from notify import notify
-from time import sleep
+import time
 app = Flask(__name__)
 
 
@@ -13,7 +13,7 @@ def mail():
 '''
 while(True):
     notify("")
-    sleep(500)
+    time.sleep(60)
     
 
 
