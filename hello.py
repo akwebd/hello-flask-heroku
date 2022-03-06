@@ -15,7 +15,7 @@ timer = 0
 while(True):
     timer = 0
     notify.notify("")
-    sleep(50)
+    sleep(500)
     
 
 
