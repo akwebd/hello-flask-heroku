@@ -13,7 +13,7 @@ def mail():
 '''
 while(True):
     notify("")
-    time.sleep(20)
+    time.sleep(10)
     
 
 
