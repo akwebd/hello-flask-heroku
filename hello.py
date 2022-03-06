@@ -1,5 +1,5 @@
 from flask import Flask
-import notify
+from notify import notify
 from time import sleep
 app = Flask(__name__)
 
@@ -12,7 +12,7 @@ def mail():
     return 'sent'
 '''
 while(True):
-    #notify.notify("")
+    notify("")
     sleep(500)
     
 
