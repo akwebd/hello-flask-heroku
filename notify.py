@@ -25,8 +25,9 @@ def notify(message):
     session = smtplib.SMTP('smtp.gmail.com', 587) #use gmail with port
     session.starttls() #enable security
     session.login(sender_address, sender_pass) #login with mail_id and password
+    sleep(10)
     text = message.as_string()
     session.sendmail(sender_address, receiver_address, text)
-    sleep(5)
+    sleep(50)
     session.quit()
     #print('Mail Sent')
