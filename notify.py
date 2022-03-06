@@ -28,4 +28,4 @@ def notify(message):
     text = message.as_string()
     session.sendmail(sender_address, receiver_address, text)
     session.quit()
-    print('Mail Sent')
+    #print('Mail Sent')
